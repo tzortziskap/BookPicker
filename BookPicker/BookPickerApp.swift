@@ -11,7 +11,8 @@ import SwiftUI
 struct BookPickerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookSelection()
+                .environmentObject(BookModel())
         }
     }
 }
